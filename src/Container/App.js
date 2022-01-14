@@ -19,7 +19,7 @@ class App extends Component {
   
           componentDidMount(){
             this.setState({isLoading : true})
-            fetch("http://jsonplaceholder.typicode.com/users")
+            fetch("https://jsonplaceholder.typicode.com/users")
             .then(response => response.json())
             .then(data => {
               this.setState({
